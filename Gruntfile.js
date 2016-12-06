@@ -20,15 +20,15 @@ module.exports = function (grunt) {
             },
             javascript: {
                 src: [
-                    'bower_components/jquery/dist/jquery.js',
-                    'bower_components/bootstrap/dist/js/bootstrap.min.js',
+                    'node_modules/jquery/dist/jquery.js',
+                    'node_modules/bootstrap/dist/js/bootstrap.min.js',
                     'src/js/*.js'
                 ],
                 dest: 'public/js/main.js'
             },
             css: {
                 src: [
-                    'bower_components/bootstrap/dist/css/bootstrap.min.css'
+                    'node_modules/bootstrap/dist/css/bootstrap.min.css'
                 ],
                 dest: 'public/css/third-party.css'
             }
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'public/css/main.css': 'src/css/main.scss',
+                    'public/css/main.css': 'src/css/main.scss'
                 }
             }
         },
