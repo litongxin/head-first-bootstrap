@@ -88,6 +88,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', [
-        'preCompile'
+        'preCompile',
+        'watch'
     ]);
 };
